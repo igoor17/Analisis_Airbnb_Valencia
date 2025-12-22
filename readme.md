@@ -43,7 +43,8 @@ A lo largo del trabajo, he realizado una limpieza profunda de los datos para eli
 ## 📦 Instalación
 
 ```bash
-rm -r -force .git
+#Clonar el repositorio:
+git clone https://github.com/igoor17/Analisis_Airbnb_Valencia
 # Instalar dependencias
 pip install -r requirements.txt
 
