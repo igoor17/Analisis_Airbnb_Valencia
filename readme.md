@@ -43,7 +43,7 @@ A lo largo del trabajo, he realizado una limpieza profunda de los datos para eli
 ## 📦 Instalación
 
 ```bash
-
+rm -r -force .git
 # Instalar dependencias
 pip install -r requirements.txt
 
