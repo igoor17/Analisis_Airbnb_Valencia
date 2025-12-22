@@ -59,10 +59,27 @@ pip install -r requirements.txt
 jupyter notebook notebooks/UD03_Analisis_Airbnb_Valencia.ipynb
 
 ```
+## 📊 Visualización del Proyecto (Presentación)
 
+Este proyecto incluye una presentación interactiva generada directamente desde el Notebook, ocultando el código para centrarse en los gráficos y conclusiones.
 
-3. Ejecutar todas las celdas en orden (Kernel → Restart & Run All)
+Tienes dos formas de verla:
 
+### Opción 1: Archivo Directo (Rápido y Fácil)
+Si no quieres ejecutar codigo, simplemente descarga y abre el archivo HTML que ya esta generado en la carpeta `notebooks`:
+
+* 📂 **Archivo:** `UD03_Analisis_Airbnb_Valencia.slides.html`
+* 🖥️ **Instrucciones:** Haz doble clic sobre el para abrirlo en tu navegador favorito.
+* ⚠️ **Nota:** Asegúrate de tener conexión a internet para que los mapas interactivos (Plotly) carguen correctamente.
+
+---
+
+### Opción 2: Generar
+Si tienes el entorno instalado y quieres ver la presentación con un servidor local (recomendado para máxima compatibilidad), ejecuta este comando en tu terminal desde la raíz del proyecto:
+
+```bash
+jupyter nbconvert notebooks/UD03_Analisis_Airbnb_Valencia.ipynb --to slides --no-input --post serve
+```
 ## 📁 Estructura del Proyecto
 
 ```text
