@@ -8,37 +8,38 @@
 
 ## 📋 Descripción del Proyecto
 
-Este proyecto consiste en un analisis de datos completo sobre el mercado de alojamientos de Airbnb en la ciudad de Valencia. He trabajado con un dataset real para entender como funcionan los precios, que zonas son las mas caras y que tipo de alojamientos prefieren los usuarios.
+En este trabajo he analizado datos reales del mercado de Airbnb en Valencia para entender como funciona el sector turistico en la ciudad. He utilizado datos de Inside Airbnb para ver que zonas son las mas caras, donde hay mas demanda y que caracteristicas hacen que un alojamiento tenga exito.
 
-A lo largo del trabajo, he realizado una limpieza profunda de los datos para eliminar errores y precios atipicos, y he creado visualizaciones avanzadas como un Dashboard general y un mapa interactivo para localizar las mejores zonas segen el precio y las reseñas.
+El objetivo era coger datos brutos, limpiarlos y sacar conclusiones utiles que sirvan para tomar decisiones, como por ejemplo: ¿donde es mejor invertir? o ¿que tipo de piso busca realmente la gente?
 
-## 📊 Dataset Utilizado
+## 📊 Datasets Utilizados
 
-- **Listings:** `listings.csv.gz` - Datos detallados de cada alojamiento (ubicación, tipo, precio, capacidad).
-- **Reviews:** `reviews.csv.gz` - Datos de las reseñas dejadas por los huespedes, utilizado para medir la popularidad.
-- **Fuente:** Inside Airbnb
-- **Tema:** Analisis del Sector Turistico
+He trabajado con dos archivos principales que se encuentran en la carpeta `datos/`:
 
-## 🎯 Objetivos del Análisis
+- **`listings.csv.gz`**: Es el archivo principal. Tiene toda la información detallada de los alojamientos (barrio, precio, número de habitaciones, etc.).
+- **`reviews.csv.gz`**: Contiene las opiniones de los usuarios. Lo he utilizado para medir la "demanda real" (analizando cuales tienen mas comentarios recientes).
 
-1. Limpiar y preparar los datos eliminando nulos y "outliers" de precios
-2. Identificar la distribución de precios por barrios y distritos en Valencia
-3. Analizar la estacionalidad del mercado y la influencia del tipo de habitación en el precio
+**Nota:** Todo el analisis se centra en el **Sector Turistico**.
 
-## 🔑 Principales Hallazgos
+## 🎯 Objetivos
 
-1. **Predominio del Piso Completo:** Los "Entire home/apt" representan la mayoria de la oferta y tienen los precios mas altos
-2. **Zonas Premium:** El centro historico y la playa concentran la oferta mas cara, mientras que el interior tiene precios mas bajos con alta demanda
-3. **Efecto de las Reseñas:** Los precios moderados acumulan mas volumen de comentarios, lo que indica que el mercado busca equilibrio entre calidad y coste
+1. **Limpieza de Datos:** Eliminar valores nulos y filtrar precios irreales (outliers superiores a 300€) que distorsionaban las medias.
+2. **Análisis de Precios:** Identificar cuanto cuesta una noche media segun el barrio y el distrito.
+3. **Análisis de Demanda:** Cruzar los datos de precios con las reseñas para ver que tipo de alojamientos tienen mayor rotación.
 
-## 🛠️ Tecnologías Utilizadas
+## 🔑 Mis Conclusiones
 
-- Python
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
-- Plotly
+1. **Piso completo vs Habitación:** La gran mayoria de la oferta en Valencia son apartamentos enteros. Alquilar habitaciones sueltas tiene mucha menos presencia y margen.
+2. **Las zonas clave:** Ciutat Vella y los Poblats Maritims (Playa) son las zonas mas caras. Sin embargo, he detectado barrios de la periferia norte con precios mas bajos pero con una demanda muy estable, ideales para empezar con menor riesgo.
+3. **El factor capacidad:** Los datos muestran que los pisos que aceptan mas huespedes consiguen mejores precios y ocupación que los estudios pequeños para dos personas.
+
+## 🛠️ Tecnologías
+
+He desarrollado el proyecto en Python 3 usando estas librerías:
+- **Pandas & NumPy:** Para toda la carga y limpieza de datos.
+- **Matplotlib & Seaborn:** Para las gráficas de precios y barras.
+- **Plotly:** Para crear el mapa interactivo de las zonas de Valencia.
+- **Nbformat:** Necesario para visualizar correctamente los mapas en el notebook.
 
 ## 📦 Instalación
 
@@ -52,7 +53,7 @@ pip install -r requirements.txt
 
 ## 🚀 Ejecución
 
-1. Descargar el dataset y colocarlo en `data/listings.csv`
+1. Descargar el dataset (`listings.csv.gz` y `reviews.csv.gz`) y colocarlos en `datos/`
 2. Abrir Jupyter Notebook:
 ```bash
 jupyter notebook notebooks/UD03_Analisis_Airbnb_Valencia.ipynb
