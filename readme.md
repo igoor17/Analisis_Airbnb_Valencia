@@ -1,10 +1,13 @@
 # Análisis del Mercado Airbnb en Valencia
 
+![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat-square&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat-square&logo=numpy&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=flat-square&logo=plotly&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-%23F37626.svg?style=flat-square&logo=jupyter&logoColor=white)
+
 **Autor:** Igor Ostyak  
 **Fecha:** 22 de Diciembre 2025  
-**Curso:** IA y Big Data  
-**Nivel de dificultad:** Intermedio 
-**Nota máxima:** 90 puntos
 
 ## 📋 Descripción del Proyecto
 
@@ -56,7 +59,7 @@ pip install -r requirements.txt
 1. Descargar el dataset (`listings.csv.gz` y `reviews.csv.gz`) y colocarlos en `datos/`
 2. Abrir Jupyter Notebook:
 ```bash
-jupyter notebook notebooks/UD03_Analisis_Airbnb_Valencia.ipynb
+jupyter notebook notebooks/Analisis_Airbnb_Valencia.ipynb
 
 ```
 ## 📊 Visualización del Proyecto (Presentación)
@@ -68,7 +71,7 @@ Tienes dos formas de verla:
 ### Opción 1: Archivo Directo (Rápido y Fácil)
 Si no quieres ejecutar codigo, simplemente descarga y abre el archivo HTML que ya esta generado en la carpeta `notebooks`:
 
-* 📂 **Archivo:** `UD03_Analisis_Airbnb_Valencia.slides.html`
+* 📂 **Archivo:** `Analisis_Airbnb_Valencia.slides.html`
 * 🖥️ **Instrucciones:** Haz doble clic sobre el para abrirlo en tu navegador favorito.
 * ⚠️ **Nota:** Asegúrate de tener conexión a internet para que los mapas interactivos (Plotly) carguen correctamente.
 
@@ -78,7 +81,7 @@ Si no quieres ejecutar codigo, simplemente descarga y abre el archivo HTML que y
 Si tienes el entorno instalado y quieres ver la presentación con un servidor local (recomendado para máxima compatibilidad), ejecuta este comando en tu terminal desde la raíz del proyecto:
 
 ```bash
-jupyter nbconvert notebooks/UD03_Analisis_Airbnb_Valencia.ipynb --to slides --no-input --post serve
+jupyter nbconvert notebooks/Analisis_Airbnb_Valencia.ipynb --to slides --no-input --post serve
 ```
 ## 📁 Estructura del Proyecto
 
@@ -90,7 +93,7 @@ Proyecto_Airbnb_Valencia/
 ├── informes/
 │   └── Informe_Final.pdf
 ├── notebooks/
-│   └── UD03_Analisis_Airbnb_Valencia.ipynb
+│   └── Analisis_Airbnb_Valencia.ipynb
 ├── visualizaciones/
 │   └──dashboard.png
 │   └──newplot.png
